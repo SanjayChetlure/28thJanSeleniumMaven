@@ -8,7 +8,7 @@ import org.openqa.selenium.chrome.ChromeDriver;
 
 public class BaseClass 
 {
-	WebDriver driver;
+	public WebDriver driver;
 	
 	public void initializeBrowser() throws IOException
 	{
