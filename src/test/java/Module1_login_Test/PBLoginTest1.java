@@ -9,6 +9,7 @@ import org.testng.annotations.AfterClass;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.BeforeMethod;
+import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 
 import LibraryFiles.BaseClass;
@@ -30,10 +31,11 @@ public class PBLoginTest1 extends BaseClass
 	PBProfilePage profile;
 	int TCID;
 
+	@Parameters("browserName")
 	@BeforeClass
-	public void openBrowser() throws EncryptedDocumentException, IOException
+	public void openBrowser(String browserName) throws EncryptedDocumentException, IOException
 	{
-		initializeBrowser();
+		initializeBrowser(browserName);
 		 login=new PBLoginPage(driver);
 		 mobNum=new PBMobNumPage(driver);
 		 pwd=new PBPwdPage(driver);
