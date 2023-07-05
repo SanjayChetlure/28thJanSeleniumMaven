@@ -13,6 +13,8 @@ import org.apache.poi.ss.usermodel.WorkbookFactory;
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.io.FileHandler;
 
 public class UtilityClass
@@ -48,6 +50,19 @@ public class UtilityClass
 		String value = p.getProperty(key);
 		
 		return value;
+	}
+	
+	
+	public static void openDDOption(WebDriver driver, WebElement ele) 
+	{
+		Actions act=new Actions(driver);
+		act.moveToElement(ele).perform();		
+	}
+	
+	public static void clicOnDDOption(WebDriver driver, WebElement ele) 
+	{
+		Actions act=new Actions(driver);
+		act.click(ele).perform();	
 	}
 	
 
