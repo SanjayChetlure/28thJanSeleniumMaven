@@ -7,6 +7,5 @@
     <classes>
       <class name="Module1_login_Test.PBLoginTest1"/>
     </classes>
-  </test> <!-- Test -->
-  
+  </test> <!-- Test -->  
 </suite> <!-- Suite -->
