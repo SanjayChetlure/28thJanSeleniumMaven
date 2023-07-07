@@ -10,6 +10,7 @@ import org.openqa.selenium.firefox.FirefoxDriver;
 public class BaseClass 
 {
 	public WebDriver driver;
+	
 	public void initializeBrowser(String browserName) throws IOException
 	{
 			
